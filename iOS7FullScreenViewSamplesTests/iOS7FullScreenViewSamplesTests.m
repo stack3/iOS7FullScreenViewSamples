@@ -2,7 +2,7 @@
 //  iOS7FullScreenViewSamplesTests.m
 //  iOS7FullScreenViewSamplesTests
 //
-//  Created by MIYAMOTO, Hideaki on 2013/10/30.
+//  Created by EIMEI on 2013/10/30.
 //  Copyright (c) 2013年 stack3. All rights reserved.
 //
 

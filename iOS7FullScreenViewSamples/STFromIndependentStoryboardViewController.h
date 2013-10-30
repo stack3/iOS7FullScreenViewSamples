@@ -1,5 +1,5 @@
 //
-//  STAppDelegate.h
+//  STFromIndependentStoryboardViewController.h
 //  iOS7FullScreenViewSamples
 //
 //  Created by EIMEI on 2013/10/30.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface STAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface STFromIndependentStoryboardViewController : UIViewController
 
 @end
