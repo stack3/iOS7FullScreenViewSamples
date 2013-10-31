@@ -46,8 +46,8 @@ typedef enum {
     [_menuItems addObject:@"from Storyboard\nwith NavigationBar and Toolbar"];
     [_menuItems addObject:@"from xib"];
     [_menuItems addObject:@"from xib\nwith NavigationBar and Toolbar"];
-    [_menuItems addObject:@"RectEggeNone"];
-    [_menuItems addObject:@"RectEggeNone\nwith NavigationBar and Toolbar"];
+    [_menuItems addObject:@"RectEdgeNone"];
+    [_menuItems addObject:@"RectEdgeNone\nwith NavigationBar and Toolbar"];
 }
 
 - (void)viewWillAppear:(BOOL)animated
