@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
-        <!--From Independent Storyboard View Controller-->
+        <!--From Storyboard View Controller-->
         <scene sceneID="Cyg-gf-y1j">
             <objects>
-                <viewController id="Ndb-Uw-pdg" customClass="STFromIndependentStoryboardViewController" sceneMemberID="viewController">
+                <viewController id="Ndb-Uw-pdg" customClass="STFromStoryboardViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0MQ-RC-wvW"/>
                         <viewControllerLayoutGuide type="bottom" id="fYD-kL-ba5"/>

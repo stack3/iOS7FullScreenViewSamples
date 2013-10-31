@@ -1,26 +1,26 @@
 //
-//  STFromIndependentStoryboardViewController.m
+//  STFromStoryboardViewController.m
 //  iOS7FullScreenViewSamples
 //
 //  Created by EIMEI on 2013/10/30.
 //  Copyright (c) 2013年 stack3. All rights reserved.
 //
 
-#import "STFromIndependentStoryboardViewController.h"
+#import "STFromStoryboardViewController.h"
 
-@interface STFromIndependentStoryboardViewController ()
+@interface STFromStoryboardViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *closeButton;
 
 @end
 
-@implementation STFromIndependentStoryboardViewController
+@implementation STFromStoryboardViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
-    self.title = @"Independent Storyboard";
+    self.title = @"from Storyboard";
 }
 
 - (void)didReceiveMemoryWarning

@@ -1,5 +1,5 @@
 //
-//  STFromIndependentStoryboardViewController.h
+//  STFromStoryboardViewController.h
 //  iOS7FullScreenViewSamples
 //
 //  Created by EIMEI on 2013/10/30.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface STFromIndependentStoryboardViewController : UIViewController
+@interface STFromStoryboardViewController : UIViewController
 
 @end

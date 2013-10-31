@@ -7,7 +7,7 @@
 //
 
 #import "STMainViewController.h"
-#import "STFromIndependentStoryboardViewController.h"
+#import "STFromStoryboardViewController.h"
 #import "STFromXibViewController.h"
 #import "STRectEdgeNoneViewController.h"
 
@@ -42,12 +42,12 @@ typedef enum {
     _tableView.delegate = self;
     
     _menuItems = [NSMutableArray arrayWithCapacity:10];
-    [_menuItems addObject:@"from Independent Storyboard"];
-    [_menuItems addObject:@"from Independent Storyboard\nwith NavigationBar"];
+    [_menuItems addObject:@"from Storyboard"];
+    [_menuItems addObject:@"from Storyboard\nwith NavigationBar and Toolbar"];
     [_menuItems addObject:@"from xib"];
-    [_menuItems addObject:@"from xib with NavigationBar"];
-    [_menuItems addObject:@"from RectEggeNone"];
-    [_menuItems addObject:@"from RectEggeNone\nwith NavigationBar"];
+    [_menuItems addObject:@"from xib\nwith NavigationBar and Toolbar"];
+    [_menuItems addObject:@"RectEggeNone"];
+    [_menuItems addObject:@"RectEggeNone\nwith NavigationBar and Toolbar"];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -83,12 +83,12 @@ typedef enum {
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.row == _STMenuItemIndexFromIndependentStoryboard) {
-        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STFromIndependentStoryboardViewController" bundle:nil];
-        STFromIndependentStoryboardViewController *con = [sb instantiateInitialViewController];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STFromStoryboardViewController" bundle:nil];
+        STFromStoryboardViewController *con = [sb instantiateInitialViewController];
         [self presentViewController:con animated:YES completion:nil];
     } else if (indexPath.row == _STMenuItemIndexFromIndependentStoryboardWithNavigationBar) {
-        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STFromIndependentStoryboardViewController" bundle:nil];
-        STFromIndependentStoryboardViewController *con = [sb instantiateInitialViewController];
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STFromStoryboardViewController" bundle:nil];
+        STFromStoryboardViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexFromXib) {
         STFromXibViewController *con = [[STFromXibViewController alloc] init];
