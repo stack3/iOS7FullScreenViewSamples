@@ -8,6 +8,7 @@
 
 #import "STMainViewController.h"
 #import "STFromStoryboardViewController.h"
+#import "STScrollViewController.h"
 #import "STFromXibViewController.h"
 #import "STRectEdgeNoneViewController.h"
 
@@ -16,6 +17,7 @@
 typedef enum {
     _STMenuItemIndexFromIndependentStoryboard,
     _STMenuItemIndexFromIndependentStoryboardWithNavigationBar,
+    _STMenuItemIndexScrollViewWithNavibarAndToolbar,
     _STMenuItemIndexFromXib,
     _STMenuItemIndexFromXibWithNavigationBar,
     _STMenuItemIndexRectEdgeNone,
@@ -44,6 +46,7 @@ typedef enum {
     _menuItems = [NSMutableArray arrayWithCapacity:10];
     [_menuItems addObject:@"from Storyboard"];
     [_menuItems addObject:@"from Storyboard\nwith NavigationBar and Toolbar"];
+    [_menuItems addObject:@"ScrollView\nwith NavigationBar and Toolbar"];
     [_menuItems addObject:@"from xib"];
     [_menuItems addObject:@"from xib\nwith NavigationBar and Toolbar"];
     [_menuItems addObject:@"RectEdgeNone"];
@@ -89,6 +92,10 @@ typedef enum {
     } else if (indexPath.row == _STMenuItemIndexFromIndependentStoryboardWithNavigationBar) {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STFromStoryboardViewController" bundle:nil];
         STFromStoryboardViewController *con = [sb instantiateInitialViewController];
+        [self.navigationController pushViewController:con animated:YES];
+    } else if (indexPath.row == _STMenuItemIndexScrollViewWithNavibarAndToolbar) {
+        UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STScrollViewController" bundle:nil];
+        STScrollViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexFromXib) {
         STFromXibViewController *con = [[STFromXibViewController alloc] init];

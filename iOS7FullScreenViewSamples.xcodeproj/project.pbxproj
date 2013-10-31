@@ -14,6 +14,8 @@
 		B721753918214D4F008216C5 /* STFromStoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B721753818214D4F008216C5 /* STFromStoryboardViewController.storyboard */; };
 		B7217540182165E8008216C5 /* STRectEdgeNoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B721753E182165E8008216C5 /* STRectEdgeNoneViewController.m */; };
 		B7217541182165E8008216C5 /* STRectEdgeNoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B721753F182165E8008216C5 /* STRectEdgeNoneViewController.xib */; };
+		B72175441822446F008216C5 /* STScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B72175431822446F008216C5 /* STScrollViewController.m */; };
+		B72175461822447E008216C5 /* STScrollViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B72175451822447E008216C5 /* STScrollViewController.storyboard */; };
 		B7F997AB1820EF2B00860B29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F997AA1820EF2B00860B29 /* Foundation.framework */; };
 		B7F997AD1820EF2B00860B29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F997AC1820EF2B00860B29 /* CoreGraphics.framework */; };
 		B7F997AF1820EF2B00860B29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F997AE1820EF2B00860B29 /* UIKit.framework */; };
@@ -51,6 +53,9 @@
 		B721753D182165E8008216C5 /* STRectEdgeNoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRectEdgeNoneViewController.h; sourceTree = "<group>"; };
 		B721753E182165E8008216C5 /* STRectEdgeNoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRectEdgeNoneViewController.m; sourceTree = "<group>"; };
 		B721753F182165E8008216C5 /* STRectEdgeNoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STRectEdgeNoneViewController.xib; sourceTree = "<group>"; };
+		B72175421822446F008216C5 /* STScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STScrollViewController.h; sourceTree = "<group>"; };
+		B72175431822446F008216C5 /* STScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STScrollViewController.m; sourceTree = "<group>"; };
+		B72175451822447E008216C5 /* STScrollViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STScrollViewController.storyboard; sourceTree = "<group>"; };
 		B7F997A71820EF2B00860B29 /* iOS7FullScreenViewSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS7FullScreenViewSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B7F997AA1820EF2B00860B29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B7F997AC1820EF2B00860B29 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,6 +141,9 @@
 				B721753518214C88008216C5 /* STFromStoryboardViewController.h */,
 				B721753618214C88008216C5 /* STFromStoryboardViewController.m */,
 				B721753818214D4F008216C5 /* STFromStoryboardViewController.storyboard */,
+				B72175421822446F008216C5 /* STScrollViewController.h */,
+				B72175431822446F008216C5 /* STScrollViewController.m */,
+				B72175451822447E008216C5 /* STScrollViewController.storyboard */,
 				B721752518214B27008216C5 /* STFromXibViewController.h */,
 				B721752618214B27008216C5 /* STFromXibViewController.m */,
 				B721752718214B27008216C5 /* STFromXibViewController.xib */,
@@ -256,6 +264,7 @@
 				B7F997C31820EF2B00860B29 /* Images.xcassets in Resources */,
 				B7217541182165E8008216C5 /* STRectEdgeNoneViewController.xib in Resources */,
 				B721752E18214B27008216C5 /* STFromXibViewController.xib in Resources */,
+				B72175461822447E008216C5 /* STScrollViewController.storyboard in Resources */,
 				B7F997B51820EF2B00860B29 /* InfoPlist.strings in Resources */,
 				B721753918214D4F008216C5 /* STFromStoryboardViewController.storyboard in Resources */,
 				B7F997BE1820EF2B00860B29 /* Main.storyboard in Resources */,
@@ -280,6 +289,7 @@
 				B7F997B71820EF2B00860B29 /* main.m in Sources */,
 				B721752D18214B27008216C5 /* STFromXibViewController.m in Sources */,
 				B7217540182165E8008216C5 /* STRectEdgeNoneViewController.m in Sources */,
+				B72175441822446F008216C5 /* STScrollViewController.m in Sources */,
 				B7F997BB1820EF2B00860B29 /* STAppDelegate.m in Sources */,
 				B721753718214C88008216C5 /* STFromStoryboardViewController.m in Sources */,
 				B721753118214B27008216C5 /* STMainViewController.m in Sources */,
