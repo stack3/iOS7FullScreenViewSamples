@@ -31,7 +31,13 @@
 {
     if (self.navigationController) {
         _closeButton.hidden = YES;
+        self.navigationController.toolbarHidden = NO;
     }
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+    self.navigationController.toolbarHidden = YES;
 }
 
 - (IBAction)didTapCloseButton:(id)sender
