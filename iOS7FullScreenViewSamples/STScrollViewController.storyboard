@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Wr-V6-y4x">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Wr-V6-y4x">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -30,9 +30,13 @@
                         <constraints>
                             <constraint firstItem="8Wr-V6-y4x" firstAttribute="top" secondItem="pZk-Dg-veP" secondAttribute="top" id="5uO-dU-fPs"/>
                             <constraint firstAttribute="trailing" secondItem="8Wr-V6-y4x" secondAttribute="trailing" id="KEj-hv-yB2"/>
+                            <constraint firstAttribute="bottom" secondItem="8Wr-V6-y4x" secondAttribute="bottom" id="ZDc-TH-Lu4"/>
                             <constraint firstItem="8Wr-V6-y4x" firstAttribute="leading" secondItem="pZk-Dg-veP" secondAttribute="leading" id="qBM-of-i4p"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="8Wr-V6-y4x" id="Ged-Vk-ye5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oza-Bq-rb0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

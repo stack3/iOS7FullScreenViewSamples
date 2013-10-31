@@ -10,7 +10,7 @@
 
 @interface STScrollViewController ()
 
-@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
+@property (weak, nonatomic) IBOutlet UITextView *textView;
 
 @end
 
@@ -26,6 +26,8 @@
     if (self.navigationController) {
         self.navigationController.toolbarHidden = NO;
     }
+
+    NSLog(@"contentInset:%@", NSStringFromUIEdgeInsets(_textView.contentInset));
 }
 
 - (void)viewWillDisappear:(BOOL)animated
