@@ -7,7 +7,6 @@
 //
 
 #import "STMainViewController.h"
-#import "STFromStoryboardViewController.h"
 #import "STFromIndependentStoryboardViewController.h"
 #import "STFromXibViewController.h"
 #import "STRectEdgeNoneViewController.h"

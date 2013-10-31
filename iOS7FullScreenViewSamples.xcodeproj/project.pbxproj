@@ -12,7 +12,6 @@
 		B721753118214B27008216C5 /* STMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B721752C18214B27008216C5 /* STMainViewController.m */; };
 		B721753718214C88008216C5 /* STFromIndependentStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B721753618214C88008216C5 /* STFromIndependentStoryboardViewController.m */; };
 		B721753918214D4F008216C5 /* STFromIndependentStoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B721753818214D4F008216C5 /* STFromIndependentStoryboardViewController.storyboard */; };
-		B721753C182159CA008216C5 /* STFromStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B721753B182159CA008216C5 /* STFromStoryboardViewController.m */; };
 		B7217540182165E8008216C5 /* STRectEdgeNoneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B721753E182165E8008216C5 /* STRectEdgeNoneViewController.m */; };
 		B7217541182165E8008216C5 /* STRectEdgeNoneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B721753F182165E8008216C5 /* STRectEdgeNoneViewController.xib */; };
 		B7F997AB1820EF2B00860B29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7F997AA1820EF2B00860B29 /* Foundation.framework */; };
@@ -49,8 +48,6 @@
 		B721753518214C88008216C5 /* STFromIndependentStoryboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFromIndependentStoryboardViewController.h; sourceTree = "<group>"; };
 		B721753618214C88008216C5 /* STFromIndependentStoryboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFromIndependentStoryboardViewController.m; sourceTree = "<group>"; };
 		B721753818214D4F008216C5 /* STFromIndependentStoryboardViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = STFromIndependentStoryboardViewController.storyboard; sourceTree = "<group>"; };
-		B721753A182159CA008216C5 /* STFromStoryboardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFromStoryboardViewController.h; sourceTree = "<group>"; };
-		B721753B182159CA008216C5 /* STFromStoryboardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFromStoryboardViewController.m; sourceTree = "<group>"; };
 		B721753D182165E8008216C5 /* STRectEdgeNoneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRectEdgeNoneViewController.h; sourceTree = "<group>"; };
 		B721753E182165E8008216C5 /* STRectEdgeNoneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRectEdgeNoneViewController.m; sourceTree = "<group>"; };
 		B721753F182165E8008216C5 /* STRectEdgeNoneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = STRectEdgeNoneViewController.xib; sourceTree = "<group>"; };
@@ -136,8 +133,6 @@
 				B7F997C21820EF2B00860B29 /* Images.xcassets */,
 				B721752B18214B27008216C5 /* STMainViewController.h */,
 				B721752C18214B27008216C5 /* STMainViewController.m */,
-				B721753A182159CA008216C5 /* STFromStoryboardViewController.h */,
-				B721753B182159CA008216C5 /* STFromStoryboardViewController.m */,
 				B721753518214C88008216C5 /* STFromIndependentStoryboardViewController.h */,
 				B721753618214C88008216C5 /* STFromIndependentStoryboardViewController.m */,
 				B721753818214D4F008216C5 /* STFromIndependentStoryboardViewController.storyboard */,
@@ -288,7 +283,6 @@
 				B7F997BB1820EF2B00860B29 /* STAppDelegate.m in Sources */,
 				B721753718214C88008216C5 /* STFromIndependentStoryboardViewController.m in Sources */,
 				B721753118214B27008216C5 /* STMainViewController.m in Sources */,
-				B721753C182159CA008216C5 /* STFromStoryboardViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
