@@ -20,6 +20,7 @@
 {
     [super viewDidLoad];
 
+    self.title = @"RectEdgeNone";
     self.edgesForExtendedLayout = UIRectEdgeNone;
 }
 
