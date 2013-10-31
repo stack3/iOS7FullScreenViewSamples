@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="516-ca-XC4">
-                                <rect key="frame" x="137" y="518" width="46" height="30"/>
+                                <rect key="frame" x="140" y="269" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Close">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -33,17 +33,29 @@
                                     <action selector="didTapCloseButton:" destination="Ndb-Uw-pdg" eventType="touchUpInside" id="LlK-Zm-odn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ca-MC-ZIi">
+                                <rect key="frame" x="20" y="547" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="K4Q-74-Vbn" firstAttribute="top" secondItem="0MQ-RC-wvW" secondAttribute="bottom" id="00i-LD-fat"/>
-                            <constraint firstItem="516-ca-XC4" firstAttribute="leading" secondItem="mlP-Du-I4X" secondAttribute="leading" constant="137" id="8xc-N8-bx0"/>
-                            <constraint firstAttribute="trailing" secondItem="516-ca-XC4" secondAttribute="trailing" constant="137" id="DgK-mb-qdb"/>
+                            <constraint firstAttribute="trailing" secondItem="9Ca-MC-ZIi" secondAttribute="trailing" constant="20" id="7Re-Rh-Apz"/>
+                            <constraint firstItem="fYD-kL-ba5" firstAttribute="top" secondItem="9Ca-MC-ZIi" secondAttribute="bottom" id="Gbi-ny-vuB"/>
+                            <constraint firstAttribute="centerY" secondItem="516-ca-XC4" secondAttribute="centerY" id="NTI-6g-BjS"/>
                             <constraint firstAttribute="trailing" secondItem="K4Q-74-Vbn" secondAttribute="trailing" constant="20" id="YWe-P5-BJ4"/>
-                            <constraint firstItem="fYD-kL-ba5" firstAttribute="top" secondItem="516-ca-XC4" secondAttribute="bottom" constant="20" id="bJe-HC-q7X"/>
+                            <constraint firstItem="9Ca-MC-ZIi" firstAttribute="leading" secondItem="mlP-Du-I4X" secondAttribute="leading" constant="20" id="bSt-vE-MZ9"/>
+                            <constraint firstAttribute="centerX" secondItem="516-ca-XC4" secondAttribute="centerX" id="oKh-5j-Ow8"/>
                             <constraint firstItem="K4Q-74-Vbn" firstAttribute="leading" secondItem="mlP-Du-I4X" secondAttribute="leading" constant="20" id="zLa-UP-4Gh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="closeButton" destination="516-ca-XC4" id="6Dx-03-kXh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7b7-bh-SNA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
