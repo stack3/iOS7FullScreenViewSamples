@@ -15,13 +15,13 @@
 #define _STCellId @"CellId"
 
 typedef enum {
-    _STMenuItemIndexFromIndependentStoryboard,
-    _STMenuItemIndexFromIndependentStoryboardWithNavigationBar,
+    _STMenuItemIndexFromStoryboard,
+    _STMenuItemIndexFromStoryboardWithNavibarAndToolbar,
     _STMenuItemIndexScrollViewWithNavibarAndToolbar,
     _STMenuItemIndexFromXib,
-    _STMenuItemIndexFromXibWithNavigationBar,
+    _STMenuItemIndexFromXibWithNavibarAndToolbar,
     _STMenuItemIndexRectEdgeNone,
-    _STMenuItemIndexRectEdgeNoneWithNavigationBar,
+    _STMenuItemIndexRectEdgeNoneWithNavibarAndToolbar
 } _STMenuItemIndex;
 
 @interface STMainViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -85,11 +85,11 @@ typedef enum {
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if (indexPath.row == _STMenuItemIndexFromIndependentStoryboard) {
+    if (indexPath.row == _STMenuItemIndexFromStoryboard) {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STFromStoryboardViewController" bundle:nil];
         STFromStoryboardViewController *con = [sb instantiateInitialViewController];
         [self presentViewController:con animated:YES completion:nil];
-    } else if (indexPath.row == _STMenuItemIndexFromIndependentStoryboardWithNavigationBar) {
+    } else if (indexPath.row == _STMenuItemIndexFromStoryboardWithNavibarAndToolbar) {
         UIStoryboard *sb = [UIStoryboard storyboardWithName:@"STFromStoryboardViewController" bundle:nil];
         STFromStoryboardViewController *con = [sb instantiateInitialViewController];
         [self.navigationController pushViewController:con animated:YES];
@@ -100,13 +100,13 @@ typedef enum {
     } else if (indexPath.row == _STMenuItemIndexFromXib) {
         STFromXibViewController *con = [[STFromXibViewController alloc] init];
         [self presentViewController:con animated:YES completion:nil];
-    } else if (indexPath.row == _STMenuItemIndexFromXibWithNavigationBar) {
+    } else if (indexPath.row == _STMenuItemIndexFromXibWithNavibarAndToolbar) {
         STFromXibViewController *con = [[STFromXibViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     } else if (indexPath.row == _STMenuItemIndexRectEdgeNone) {
         STRectEdgeNoneViewController *con = [[STRectEdgeNoneViewController alloc] init];
         [self presentViewController:con animated:YES completion:nil];
-    } else if (indexPath.row == _STMenuItemIndexRectEdgeNoneWithNavigationBar) {
+    } else if (indexPath.row == _STMenuItemIndexRectEdgeNoneWithNavibarAndToolbar) {
         STRectEdgeNoneViewController *con = [[STRectEdgeNoneViewController alloc] init];
         [self.navigationController pushViewController:con animated:YES];
     }
