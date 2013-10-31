@@ -86,23 +86,34 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C7D-m7-0e6">
-                                <rect key="frame" x="137" y="518" width="46" height="30"/>
+                                <rect key="frame" x="140" y="269" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Close">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="didTapCloseButton:" destination="qNX-2K-6l3" eventType="touchUpInside" id="Ecz-ic-4ca"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYK-0a-BXm">
+                                <rect key="frame" x="20" y="547" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Wnc-wo-7oJ" firstAttribute="top" secondItem="6O1-cY-sUh" secondAttribute="bottom" id="3eq-5o-2O2"/>
                             <constraint firstAttribute="trailing" secondItem="Wnc-wo-7oJ" secondAttribute="trailing" constant="20" id="8an-Q5-emD"/>
-                            <constraint firstItem="g2Q-XI-O9k" firstAttribute="top" secondItem="C7D-m7-0e6" secondAttribute="bottom" constant="20" id="C3f-0Z-pob"/>
+                            <constraint firstAttribute="centerY" secondItem="C7D-m7-0e6" secondAttribute="centerY" id="KCu-gC-Pg0"/>
                             <constraint firstItem="Wnc-wo-7oJ" firstAttribute="leading" secondItem="11r-m9-bya" secondAttribute="leading" constant="20" id="Nb7-3n-zQx"/>
-                            <constraint firstAttribute="centerX" secondItem="C7D-m7-0e6" secondAttribute="centerX" id="dk2-EW-S6t"/>
+                            <constraint firstItem="g2Q-XI-O9k" firstAttribute="top" secondItem="bYK-0a-BXm" secondAttribute="bottom" id="WV4-qw-1Rq"/>
+                            <constraint firstItem="bYK-0a-BXm" firstAttribute="leading" secondItem="11r-m9-bya" secondAttribute="leading" constant="20" id="mum-0T-olX"/>
+                            <constraint firstAttribute="centerX" secondItem="C7D-m7-0e6" secondAttribute="centerX" id="sSU-Za-BqZ"/>
+                            <constraint firstAttribute="trailing" secondItem="bYK-0a-BXm" secondAttribute="trailing" constant="20" id="sbS-eC-29R"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -110,10 +121,10 @@
             </objects>
             <point key="canvasLocation" x="297" y="-223"/>
         </scene>
-        <!--View Controller-->
+        <!--From Storyboard View Controller-->
         <scene sceneID="Jhc-fB-BCi">
             <objects>
-                <viewController storyboardIdentifier="X1" id="L0u-6U-gpv" sceneMemberID="viewController">
+                <viewController id="L0u-6U-gpv" customClass="STFromStoryboardViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="f6k-fY-7HJ"/>
                         <viewControllerLayoutGuide type="bottom" id="IMG-hi-Gmp"/>
@@ -130,10 +141,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YeP-nC-OzA">
+                                <rect key="frame" x="20" y="547" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="bdm-y3-rMY" firstAttribute="top" secondItem="f6k-fY-7HJ" secondAttribute="bottom" id="8VY-QX-aTL"/>
+                            <constraint firstItem="YeP-nC-OzA" firstAttribute="leading" secondItem="gLJ-jz-sJO" secondAttribute="leading" constant="20" id="Fcs-6O-Q0v"/>
+                            <constraint firstAttribute="trailing" secondItem="YeP-nC-OzA" secondAttribute="trailing" constant="20" id="M9m-dF-4Gc"/>
+                            <constraint firstItem="IMG-hi-Gmp" firstAttribute="top" secondItem="YeP-nC-OzA" secondAttribute="bottom" id="T9j-pM-I32"/>
                             <constraint firstItem="bdm-y3-rMY" firstAttribute="leading" secondItem="gLJ-jz-sJO" secondAttribute="leading" constant="20" id="eCE-gk-edY"/>
                             <constraint firstAttribute="trailing" secondItem="bdm-y3-rMY" secondAttribute="trailing" constant="20" id="eGF-Z6-0qM"/>
                         </constraints>

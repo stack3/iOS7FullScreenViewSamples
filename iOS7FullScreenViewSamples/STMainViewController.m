@@ -51,6 +51,11 @@ typedef enum {
     [_menuItems addObject:@"from RectEggeNone\nwith NavigationBar"];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [_tableView deselectRowAtIndexPath:_tableView.indexPathForSelectedRow animated:YES];
+}
+
 #pragma mark - UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
